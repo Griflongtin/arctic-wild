@@ -1,5 +1,12 @@
 body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  background-color: black; }
+
+*, *::after, *::before {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -381,5 +388,188 @@ textarea {
   font-weight: 400;
   src: local("Fjalla One"), local("FjallaOne-Regular"), url(https://fonts.gstatic.com/s/fjallaone/v5/rxxXUYj4oZ6Q5oDJFtEd6gzyDMXhdD8sAj6OAJTFsBI.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215; }
+.hero nav {
+  padding: 20px 0; }
+  .hero nav .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .hero nav .info .logo {
+      display: flex;
+      align-items: center; }
+      .hero nav .info .logo img {
+        width: 50px;
+        height: 50px; }
+      .hero nav .info .logo a {
+        font-family: 'Spectral SC', serif;
+        font-weight: 400;
+        font-size: 30px;
+        color: white;
+        padding-left: 6%; }
+    .hero nav .info .nav-ul {
+      display: flex;
+      justify-content: flex-end; }
+      .hero nav .info .nav-ul li {
+        display: flex;
+        align-items: center;
+        margin-right: 10px; }
+        .hero nav .info .nav-ul li a {
+          text-transform: uppercase;
+          font-family: 'Fjalla One';
+          color: white; }
+        .hero nav .info .nav-ul li img {
+          padding: 0px; }
+
+.search {
+  background-color: #646461;
+  height: 50px;
+  padding: 10px 0px;
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 700px;
+  /* Position the navbar at the top of the page */
+  width: 100%; }
+  .search ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px; }
+    .search ul li {
+      color: white;
+      display: flex;
+      align-items: center;
+      margin-right: 10px; }
+
+.hero {
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../img/hero-slide1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 99.6vh;
+  min-height: 200px; }
+
+.hero-text {
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center; }
+  .hero-text .text-divider {
+    width: 25%;
+    border: 3px solid white; }
+  .hero-text p {
+    margin: 0em;
+    color: white; }
+  .hero-text .big {
+    font-family: 'Spectral SC', serif;
+    font-size: 100px;
+    text-transform: uppercase; }
+  .hero-text .small {
+    font-family: 'Fjalla One';
+    font-size: 25px;
+    text-transform: uppercase; }
+
+.hero-img {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px; }
+  .hero-img img {
+    margin-left: 10px;
+    width: 50%; }
+
+.scroll-btn {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .scroll-btn #scroll-text {
+    border-radius: 2px;
+    padding: 20px 30px;
+    background-color: #dc7725; }
+  .scroll-btn a {
+    margin: -6px; }
+
+.gallery {
+  display: flex;
+  flex-flow: wrap; }
+
+.raft {
+  background-image: url(../img/home-raft.jpg);
+  background-repeat: none;
+  background-size: cover;
+  flex-basis: 50%;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; }
+  .raft .activity-img {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .raft .activity-label {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-left: 15px; }
+  .raft .label-text {
+    width: 100%;
+    color: white;
+    font-size: 20px; }
+  .raft .trip-divide {
+    border: #dc7725 solid 3px;
+    width: 50px;
+    height: 5px;
+    margin-bottom: -25px; }
+
+.camp {
+  background-image: url(../img/home-basecamp.jpg);
+  background-repeat: none;
+  background-size: cover;
+  flex-basis: 25%; }
+
+.backpack {
+  background-image: url(../img/home-backpacking.jpg);
+  background-repeat: none;
+  background-size: cover;
+  flex-basis: 25%; }
+
+.canoe {
+  background-image: url(../img/home-canoe.jpg);
+  background-repeat: none;
+  background-size: cover;
+  flex-basis: 25%; }
+
+.photo {
+  background-image: url(../img/home-photo.jpg);
+  background-repeat: none;
+  background-size: cover;
+  flex-basis: 25%; }
+
+.custom {
+  background-image: url(../img/home-custom.jpg);
+  background-repeat: none;
+  background-size: cover;
+  flex-basis: 50%;
+  flex-grow: 1; }
 
 /*# sourceMappingURL=master.css.map */

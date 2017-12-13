@@ -1,0 +1,64 @@
+.hero nav {
+  padding: 20px 0;
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .logo {
+      display: flex;
+      align-items: center;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      a {
+        font-family: 'Spectral SC', serif;
+        font-weight: 400;
+        font-size: 30px;
+        color: white;
+        padding-left: 6%;
+      }
+    }
+    .nav-ul {
+      display: flex;
+      justify-content: flex-end;
+      li {
+        // padding: 0 10px;
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        a {
+          text-transform: uppercase;
+          font-family: 'Fjalla One';
+          color: white;
+        }
+        img {
+          padding: 0px;
+        }
+      }
+    }
+  }
+}
+
+.search {
+  background-color: #646461;
+  height: 50px;
+  padding: 10px 0px;
+  // display: flex;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 700px; /* Position the navbar at the top of the page */
+  width: 100%;
+  ul {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  li {
+    // padding: 0 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    }
+  }
+}

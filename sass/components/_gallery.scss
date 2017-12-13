@@ -1,0 +1,136 @@
+.gallery {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.raft {
+  background-image: url(../img/home-raft.jpg);
+  background-repeat: none;
+  background-size: cover;
+  flex-basis: 50%;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  .activity-img {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .activity-label {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-left: 15px;
+  }
+  .label-text {
+    width: 100%;
+    color: white;
+    font-size: 20px;
+  }
+  .trip-divide {
+    border: #dc7725 solid 3px;
+    width: 50px;
+    height: 5px;
+    margin-bottom: -25px;
+  }
+}
+
+.camp {
+  background-image: url(../img/home-basecamp.jpg);
+  background-repeat: none;
+  background-size: cover;
+  flex-basis: 25%;
+}
+.backpack {
+  background-image: url(../img/home-backpacking.jpg);
+  background-repeat: none;
+  background-size: cover;
+  flex-basis: 25%;
+}
+.canoe {
+  background-image: url(../img/home-canoe.jpg);
+  background-repeat: none;
+  background-size: cover;
+  flex-basis: 25%;
+}
+.photo {
+  background-image: url(../img/home-photo.jpg);
+  background-repeat: none;
+  background-size: cover;
+  flex-basis: 25%;
+}
+.custom {
+  background-image: url(../img/home-custom.jpg);
+  background-repeat: none;
+  background-size: cover;
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+
+
+
+
+
+
+
+
+// .gallery > div {
+//   display: flex;
+//   padding: 10px 20px;
+//   height: 350px;
+//   border: 10px purple solid;
+//   flex-wrap: wrap;
+//
+//
+//   > div {
+//     display: flex;
+//     width: 100%;
+//     border: 10px green solid;
+//   }
+//
+//   .activity-icon {
+//     border: blue 10px solid;
+//   }
+// }
+// .one {
+//   border: 2px solid white;
+// }
+
+
+
+
+// .activity-img {
+//   display: flex;
+//   justify-content: center;
+// }
+//
+// .activity-icon {
+//   align-self: center;
+//   justify-content: center;
+// }
+
+// .activity-label {
+//   display: flex;
+
+// p {
+//   font-family: 'Fjalla One';
+//   color: ivory;
+//   font-size: 15px;
+//   font-weight: 300;
+//   text-transform: uppercase;
+//   align-self: flex-end;
+// }
+// .trip-divide {
+//   border: #dc7725 solid 3px;
+//   width: 50px;
+//   height: 5px;
+//
+// }
